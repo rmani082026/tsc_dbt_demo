@@ -2,8 +2,8 @@ version: 2
 sources:
 - name: tb_101
   description: 'Point of Sale source data'
-  database: tasty_bytes_dbt_db
-  schema: RAW
+  database: tb_101
+  schema: RAW_POS
   tables:
   - name: COUNTRY
     description: 'Country reference data'
@@ -275,6 +275,11 @@ sources:
       description: 'Date truck began operations'
       data_tests:
         - not_null
+ - name: tb_101
+  description: 'Customer source data'
+  database: tb_101
+  schema: RAW_CUSTOMER
+  tables: 
   - name: CUSTOMER_LOYALTY
     description: ''
     columns:
