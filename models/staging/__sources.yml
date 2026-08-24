@@ -32,7 +32,7 @@ sources:
     - name: CITY_POPULATION
       description: 'City population count'
       data_tests:
-        # - is_positive_amount
+      #  - is_positive_amount
   - name: FRANCHISE
     description: 'Franchise ownership data'
     columns:
@@ -117,7 +117,7 @@ sources:
     - name: COST_OF_GOODS_USD
       description: 'Cost to prepare item'
       data_tests:
-       # - is_positive_amount
+        # - is_positive_amount
     - name: SALE_PRICE_USD
       description: 'Retail price of item'
       data_tests:
@@ -152,15 +152,15 @@ sources:
       description: 'Quantity ordered'
       data_tests:
         - not_null
-        # - is_positive_amount
+       # - is_positive_amount
     - name: UNIT_PRICE
       description: 'Price per unit'
       data_tests:
-        # - is_positive_amount
+       # - is_positive_amount
     - name: PRICE
       description: 'Total line price'
       data_tests:
-        # - is_positive_amount
+       # - is_positive_amount
     - name: ORDER_ITEM_DISCOUNT_AMOUNT
       description: 'Discount amount for line'
   - name: ORDER_HEADER
@@ -213,7 +213,7 @@ sources:
       description: 'Pre-tax order amount'
       data_tests:
         - not_null
-        # - is_positive_amount
+       # - is_positive_amount
         # - dbt_utils.accepted_range:  # Realistic order amount range
         #     min_value: 0
         #     max_value: 10
@@ -226,7 +226,7 @@ sources:
       description: 'Total order amount'
       data_tests:
         - not_null
-        # - is_positive_amount
+       # - is_positive_amount
   - name: TRUCK
     description: 'Food truck data'
     columns:
@@ -275,3 +275,36 @@ sources:
       description: 'Date truck began operations'
       data_tests:
         - not_null
+  - name: CUSTOMER_LOYALTY
+    description: ''
+    columns:
+    - name: CUSTOMER_ID
+      description: ''
+    - name: FIRST_NAME
+      description: ''
+    - name: LAST_NAME
+      description: ''
+    - name: CITY
+      description: ''
+    - name: COUNTRY
+      description: ''
+    - name: POSTAL_CODE
+      description: ''
+    - name: PREFERRED_LANGUAGE
+      description: ''
+    - name: GENDER
+      description: ''
+    - name: FAVOURITE_BRAND
+      description: ''
+    - name: MARITAL_STATUS
+      description: ''
+    - name: CHILDREN_COUNT
+      description: ''
+    - name: SIGN_UP_DATE
+      description: ''
+    - name: BIRTHDAY_DATE
+      description: ''
+    - name: E_MAIL
+      description: ''
+    - name: PHONE_NUMBER
+      description: ''
