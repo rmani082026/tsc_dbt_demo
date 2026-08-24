@@ -32,7 +32,7 @@ sources:
     - name: CITY_POPULATION
       description: 'City population count'
       data_tests:
-      #  - is_positive_amount
+        - not_null
   - name: FRANCHISE
     description: 'Franchise ownership data'
     columns:
@@ -156,11 +156,11 @@ sources:
     - name: UNIT_PRICE
       description: 'Price per unit'
       data_tests:
-       # - is_positive_amount
+        - not_null
     - name: PRICE
       description: 'Total line price'
       data_tests:
-       # - is_positive_amount
+        - not_null
     - name: ORDER_ITEM_DISCOUNT_AMOUNT
       description: 'Discount amount for line'
   - name: ORDER_HEADER
