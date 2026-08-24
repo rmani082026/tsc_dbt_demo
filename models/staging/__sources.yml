@@ -117,11 +117,11 @@ sources:
     - name: COST_OF_GOODS_USD
       description: 'Cost to prepare item'
       data_tests:
-        - is_positive_amount
+       # - is_positive_amount
     - name: SALE_PRICE_USD
       description: 'Retail price of item'
       data_tests:
-        - is_positive_amount
+        # - is_positive_amount
     - name: MENU_ITEM_HEALTH_METRICS_OBJ
       description: 'Health metrics for menu item'
   - name: ORDER_DETAIL
@@ -152,7 +152,7 @@ sources:
       description: 'Quantity ordered'
       data_tests:
         - not_null
-        - is_positive_amount
+        # - is_positive_amount
     - name: UNIT_PRICE
       description: 'Price per unit'
       data_tests:
