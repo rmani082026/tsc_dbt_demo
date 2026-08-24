@@ -1,0 +1,40 @@
+version: 2
+sources:
+- name: tb_101
+  description: 'Point of Sale source data'
+  database: tasty_bytes_dbt_db
+  schema: RAW
+  tables:
+   - name: CUSTOMER_LOYALTY
+    description: ''
+    columns:
+    - name: CUSTOMER_ID
+      description: ''
+    - name: FIRST_NAME
+      description: ''
+    - name: LAST_NAME
+      description: ''
+    - name: CITY
+      description: ''
+    - name: COUNTRY
+      description: ''
+    - name: POSTAL_CODE
+      description: ''
+    - name: PREFERRED_LANGUAGE
+      description: ''
+    - name: GENDER
+      description: ''
+    - name: FAVOURITE_BRAND
+      description: ''
+    - name: MARITAL_STATUS
+      description: ''
+    - name: CHILDREN_COUNT
+      description: ''
+    - name: SIGN_UP_DATE
+      description: ''
+    - name: BIRTHDAY_DATE
+      description: ''
+    - name: E_MAIL
+      description: ''
+    - name: PHONE_NUMBER
+      description: ''
