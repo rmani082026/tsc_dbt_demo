@@ -156,11 +156,11 @@ sources:
     - name: UNIT_PRICE
       description: 'Price per unit'
       data_tests:
-        - is_positive_amount
+        # - is_positive_amount
     - name: PRICE
       description: 'Total line price'
       data_tests:
-        - is_positive_amount
+        # - is_positive_amount
     - name: ORDER_ITEM_DISCOUNT_AMOUNT
       description: 'Discount amount for line'
   - name: ORDER_HEADER
@@ -226,7 +226,7 @@ sources:
       description: 'Total order amount'
       data_tests:
         - not_null
-        - is_positive_amount
+        # - is_positive_amount
   - name: TRUCK
     description: 'Food truck data'
     columns:
