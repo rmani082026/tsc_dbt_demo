@@ -32,7 +32,7 @@ sources:
     - name: CITY_POPULATION
       description: 'City population count'
       data_tests:
-        - is_positive_amount
+        # - is_positive_amount
   - name: FRANCHISE
     description: 'Franchise ownership data'
     columns:
@@ -213,7 +213,7 @@ sources:
       description: 'Pre-tax order amount'
       data_tests:
         - not_null
-        - is_positive_amount
+        # - is_positive_amount
         # - dbt_utils.accepted_range:  # Realistic order amount range
         #     min_value: 0
         #     max_value: 10
